@@ -78,12 +78,13 @@
                     <li><strong>Pflichten des Nutzers:</strong> Keine missbräuchliche Nutzung, keine rechtswidrigen Inhalte.</li>
                     <li><strong>Entgelt:</strong> Sofern nicht anders angegeben, unentgeltlich; In-App-Käufe optional.</li>
                     <li><strong>Laufzeit/Kündigung:</strong> Nutzung jederzeit beendbar durch Deinstallation.</li>
+                    <li><strong>Mindestalter:</strong> Die Nutzung der App setzt ein Mindestalter von 13 Jahren voraus. Personen unter 13 Jahren dürfen die App nur mit Zustimmung und unter Aufsicht eines Erziehungsberechtigten nutzen.</li>
                 </ul>
             </div>
         </div>
 
         <div class="card">
-            <h2>Abonnements & Lizenzen</h2>
+            <h2>Abonnements &amp; Lizenzen</h2>
             <div class="legal-section">
                 <p>
                     Mit dem Abschluss eines Abonnements erwerben Sie keine App, Software oder sonstige Güter, 
@@ -116,7 +117,6 @@
                     Eine Kündigung innerhalb der App ist technisch nicht möglich. Nach der Kündigung 
                     bleibt der Premium-Zugang bis zum Ende des bezahlten Zeitraums bestehen.
                 </p>
-                
                 <p>
                     Nach Beendigung eines zeitlich begrenzten Abonnements erlischt der Zugang zu den 
                     Premium-Funktionen; die Basisfunktionen bleiben weiterhin nutzbar.
@@ -151,8 +151,9 @@
         </div>
 
         <div class="card">
-            <h2>Importierte Inhalte</h2>
+            <h2>Importierte Inhalte &amp; Rezepte</h2>
             <div class="legal-section">
+                <h4>Verantwortlichkeit des Nutzers</h4>
                 <p>
                     Der Nutzer ist allein verantwortlich für alle Inhalte, die er in die App importiert, 
                     eingibt oder mit anderen teilt – einschließlich Rezepte, Texte, Bilder und sonstige Daten.
@@ -162,6 +163,36 @@
                     Urheberrechte, Nutzungsrechte, Persönlichkeitsrechte) an diesen Inhalten verfügt 
                     oder entsprechende Genehmigungen eingeholt hat.
                 </p>
+
+                <h4>Haftungsausschluss für importierte Rezepte</h4>
+                <p>
+                    Die App bietet die Möglichkeit, Rezepte aus externen Quellen (Webseiten, soziale 
+                    Medien, PDF-Dateien, Fotos, manueller Texteingabe) zu importieren. Beim Import werden 
+                    Rezeptdaten automatisch erkannt und strukturiert. Der Betreiber übernimmt <strong>keine 
+                    Gewähr</strong> für:
+                </p>
+                <ul>
+                    <li>Die <strong>Richtigkeit, Vollständigkeit oder Aktualität</strong> importierter Rezeptinhalte (Zutaten, Mengenangaben, Zubereitungsschritte, Nährwertangaben).</li>
+                    <li>Die <strong>Unbedenklichkeit oder Verträglichkeit</strong> der in importierten Rezepten genannten Zutaten. Importierte Rezepte können Allergene oder unverträgliche Stoffe enthalten, die nicht gesondert gekennzeichnet sind.</li>
+                    <li>Die <strong>Einhaltung lebensmittelrechtlicher Vorschriften</strong> oder hygienischer Standards in importierten Rezepten (z.&nbsp;B. Kerntemperaturen, Garzeit, Lagerungshinweise).</li>
+                    <li>Die <strong>Richtigkeit automatisch erkannter Daten</strong> beim Import (z.&nbsp;B. fehlerhafte OCR-Erkennung, falsch zugeordnete Mengenangaben, fehlende Zutaten).</li>
+                </ul>
+                <p>
+                    Der Nutzer ist verpflichtet, importierte Rezepte vor der Verwendung eigenständig 
+                    auf Richtigkeit und Vollständigkeit zu prüfen – insbesondere hinsichtlich 
+                    Allergene, Unverträglichkeiten und Lebensmittelsicherheit.
+                </p>
+
+                <h4>Keine Ernährungs- oder Gesundheitsberatung</h4>
+                <p>
+                    Die in der App dargestellten Rezepte und Nährwertangaben dienen ausschließlich zu 
+                    Informationszwecken und stellen <strong>keine medizinische, ernährungswissenschaftliche 
+                    oder diätetische Beratung</strong> dar. Bei Allergien, Unverträglichkeiten, 
+                    gesundheitlichen Einschränkungen oder besonderen Ernährungsanforderungen konsultieren 
+                    Sie bitte einen Arzt oder qualifizierten Ernährungsberater.
+                </p>
+
+                <h4>Freistellung</h4>
                 <p>
                     Der Betreiber übernimmt keine Haftung für Rechtsverletzungen durch nutzergenerierte 
                     oder importierte Inhalte. Bei Kenntnis von Rechtsverletzungen werden entsprechende 
@@ -172,12 +203,109 @@
         </div>
 
         <div class="card">
+            <h2>Einsatz von Künstlicher Intelligenz</h2>
+            <div class="legal-section">
+                <h4>KI-gestützte Rezepterkennung</h4>
+                <p>
+                    Die App bietet eine optionale Premium-Funktion („KI Scan"), die mithilfe von
+                    Künstlicher Intelligenz Rezepte aus Fotos erkennt. Hierfür wird die
+                    <strong>Google Gemini API</strong> (Gemini Flash Vision) eingesetzt, ein
+                    KI-Dienst der Google Ireland Limited.
+                </p>
+                <p>
+                    Bei Nutzung dieser Funktion wird ein komprimiertes Foto über eine Firebase
+                    Cloud Function an die Gemini API übermittelt. Das KI-Modell analysiert das
+                    Bild und gibt ein strukturiertes Rezept (Name, Zutaten, Zubereitung) zurück.
+                </p>
+
+                <h4>Hinweise zur KI-generierten Inhalten</h4>
+                <ul>
+                    <li>Die erkannten Rezepte werden <strong>automatisch von einer KI generiert</strong>
+                        und können Fehler enthalten (z.&nbsp;B. falsche Mengenangaben, fehlende Zutaten,
+                        unvollständige Zubereitungsschritte).</li>
+                    <li>Der Nutzer ist verpflichtet, KI-erkannte Rezepte vor der Verwendung
+                        <strong>eigenständig auf Richtigkeit zu prüfen</strong>.</li>
+                    <li>Der Betreiber übernimmt <strong>keine Gewähr</strong> für die Richtigkeit,
+                        Vollständigkeit oder Unbedenklichkeit KI-generierter Rezeptinhalte.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Urheberrechtsverletzungen melden</h2>
+            <div class="legal-section">
+                <p>
+                    Wenn Sie der Meinung sind, dass durch importierte oder geteilte Inhalte in der App 
+                    Ihre Urheberrechte verletzt werden, kontaktieren Sie uns bitte unter:
+                </p>
+                <p>
+                    <strong>E-Mail:</strong> <a href="mailto:mail@jch-technologies.de">mail@jch-technologies.de</a><br>
+                    <strong>Betreff:</strong> Copyright/DMCA Notice – Küchenschatz
+                </p>
+                <p>Bitte geben Sie folgende Informationen an:</p>
+                <ul>
+                    <li>Beschreibung des urheberrechtlich geschützten Werks</li>
+                    <li>Beschreibung des beanstandeten Inhalts und dessen Fundort</li>
+                    <li>Ihre Kontaktdaten (Name, E-Mail, ggf. Telefon)</li>
+                    <li>Erklärung, dass Sie in gutem Glauben handeln und die Nutzung nicht autorisiert ist</li>
+                    <li>Erklärung, dass die obigen Angaben wahrheitsgemäß sind</li>
+                </ul>
+                <p>
+                    Wir werden berechtigte Meldungen zeitnah prüfen und entsprechende Maßnahmen ergreifen 
+                    (Entfernung oder Sperrung der betroffenen Inhalte).
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Gewährleistungsausschluss</h2>
+            <div class="legal-section">
+                <p>
+                    Die App wird „wie besehen" („as is") und „wie verfügbar" („as available") bereitgestellt, 
+                    ohne ausdrückliche oder stillschweigende Gewährleistungen jeglicher Art. Soweit gesetzlich 
+                    zulässig, schließen wir insbesondere alle stillschweigenden Gewährleistungen aus, einschließlich 
+                    der Gewährleistung der Marktgängigkeit, der Eignung für einen bestimmten Zweck und der 
+                    Nichtverletzung von Rechten Dritter.
+                </p>
+                <p>
+                    Wir garantieren nicht, dass die App fehlerfrei, unterbrechungsfrei oder jederzeit 
+                    verfügbar ist, oder dass Fehler behoben werden.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
             <h2>Haftungsbeschränkung</h2>
             <div class="legal-section">
                 <p>
-                    Die Nutzung der App erfolgt auf eigene Gefahr. Bei Vorsatz und grober Fahrlässigkeit 
-                    haften wir unbeschränkt; bei einfacher Fahrlässigkeit nur für Kardinalpflichten, 
-                    beschränkt auf den typischen, vorhersehbaren Schaden.
+                    Soweit gesetzlich zulässig, haftet der Betreiber nicht für indirekte, zufällige, 
+                    besondere, Folge- oder Strafschäden, die aus der Nutzung oder der Unmöglichkeit der 
+                    Nutzung der App entstehen – einschließlich, aber nicht beschränkt auf Schäden durch 
+                    fehlerhafte Rezeptinformationen, Datenverlust oder Betriebsunterbrechung.
+                </p>
+                <p>
+                    Im Rahmen deutschen Rechts gilt: Bei Vorsatz und grober Fahrlässigkeit haften wir 
+                    unbeschränkt; bei einfacher Fahrlässigkeit nur für wesentliche Vertragspflichten 
+                    (Kardinalpflichten), beschränkt auf den typischen, vorhersehbaren Schaden.
+                </p>
+                <p>
+                    Die vorstehenden Haftungsbeschränkungen gelten nicht, soweit sie durch zwingendes 
+                    Recht des jeweiligen Landes ausgeschlossen oder eingeschränkt sind.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Anwendbares Recht &amp; Gerichtsstand</h2>
+            <div class="legal-section">
+                <p>
+                    Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des 
+                    UN-Kaufrechts (CISG). Zwingende Verbraucherschutzvorschriften des Staates, in dem 
+                    der Nutzer seinen gewöhnlichen Aufenthalt hat, bleiben unberührt.
+                </p>
+                <p>
+                    Gerichtsstand ist, soweit gesetzlich zulässig, Kaiserslautern, Deutschland. 
+                    Für Verbraucher innerhalb der EU gilt der gesetzliche Gerichtsstand.
                 </p>
             </div>
         </div>
@@ -190,8 +318,20 @@
                     Apple, iOS und App Store sind Marken von Apple Inc.
                 </p>
             </div>
-            
-            <p class="last-updated">Stand: 02.02.2026</p>
+        </div>
+
+        <div class="card">
+            <h2>Salvatorische Klausel</h2>
+            <div class="legal-section">
+                <p>
+                    Sollte eine Bestimmung dieser rechtlichen Hinweise unwirksam oder undurchsetzbar sein, 
+                    bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt. Die unwirksame 
+                    Bestimmung wird durch eine wirksame Bestimmung ersetzt, die dem wirtschaftlichen 
+                    Zweck der unwirksamen Bestimmung am nächsten kommt.
+                </p>
+            </div>
+
+            <p class="last-updated">Stand: 06.03.2026</p>
         </div>
     </main>
 

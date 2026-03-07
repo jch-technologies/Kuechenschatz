@@ -87,9 +87,38 @@
             <div class="legal-section">
                 <h4>Recipe Import</h4>
                 <p>
-                    When importing recipes from websites (e.g., Instagram, TikTok), the corresponding 
-                    URLs are accessed to extract recipe data. This data is processed and stored 
+                    When importing recipes from websites (e.g., Instagram, TikTok), the corresponding
+                    URLs are accessed to extract recipe data. This data is processed and stored
                     exclusively locally.
+                </p>
+            </div>
+
+            <div class="legal-section">
+                <h4>AI-Based Recipe Recognition (Premium Feature)</h4>
+                <p>
+                    The app offers an optional AI Scan feature that recognizes recipes from photos.
+                    When using this feature, the captured photo is compressed (max 1024&nbsp;px, JPEG)
+                    and sent as Base64-encoded data via a Firebase Cloud Function to the
+                    <strong>Google Gemini API</strong> (Gemini Flash Vision).
+                </p>
+                <p>
+                    <strong>Data processed:</strong> The compressed camera image is transmitted to
+                    Google servers for recipe recognition. No other personal data (name, email, etc.)
+                    is sent to Gemini.
+                </p>
+                <p>
+                    <strong>Purpose:</strong> Automatic recognition and structuring of recipe
+                    information (name, ingredients, instructions, category) from photos.
+                </p>
+                <p>
+                    <strong>Storage:</strong> The transmitted images are not permanently stored by
+                    Google and are not used to train AI models. Processing occurs solely for
+                    real-time analysis as part of the API request.
+                </p>
+                <p>
+                    <strong>Legal basis:</strong> Art.&nbsp;6(1)(a) GDPR (consent) – The feature
+                    is only triggered by an explicit user action (tapping the AI Scan button).
+                    Users are informed about data transmission before first use.
                 </p>
             </div>
         </div>
@@ -139,8 +168,25 @@
             <div class="legal-section">
                 <h4>Apple iCloud/CloudKit</h4>
                 <p>
-                    When iCloud synchronization is enabled, your data is stored on Apple servers. 
+                    When iCloud synchronization is enabled, your data is stored on Apple servers.
                     <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a> applies.
+                </p>
+            </div>
+
+            <div class="legal-section">
+                <h4>Google Firebase &amp; Google Gemini API</h4>
+                <p>
+                    When cross-platform synchronization is enabled, data is stored via Google
+                    Firebase (Cloud Firestore). The AI Scan feature uses the Google Gemini API
+                    for image analysis. In both cases, data is transmitted to servers operated
+                    by <strong>Google Ireland Limited</strong> (Gordon House, Barrow Street,
+                    Dublin 4, Ireland).
+                </p>
+                <p>
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>
+                    and the
+                    <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms of Service</a>
+                    apply.
                 </p>
             </div>
         </div>
@@ -154,7 +200,7 @@
                 </p>
             </div>
             
-            <p class="last-updated">Last updated: February 2, 2026</p>
+            <p class="last-updated">Last updated: March 6, 2026</p>
         </div>
     </main>
 

@@ -87,9 +87,41 @@
             <div class="legal-section">
                 <h4>Rezept-Import</h4>
                 <p>
-                    Beim Import von Rezepten von Webseiten (z.B. Instagram, TikTok) werden die 
-                    entsprechenden URLs abgerufen, um Rezeptdaten zu extrahieren. Diese Daten 
+                    Beim Import von Rezepten von Webseiten (z.B. Instagram, TikTok) werden die
+                    entsprechenden URLs abgerufen, um Rezeptdaten zu extrahieren. Diese Daten
                     werden ausschließlich lokal verarbeitet und gespeichert.
+                </p>
+            </div>
+
+            <div class="legal-section">
+                <h4>KI-gestützte Rezepterkennung (Premium-Funktion)</h4>
+                <p>
+                    Die App bietet eine optionale KI-Scan-Funktion, mit der Rezepte aus Fotos
+                    erkannt werden können. Bei Nutzung dieser Funktion wird das aufgenommene Foto
+                    komprimiert (max. 1024&nbsp;px, JPEG) und als Base64-kodierte Daten über eine
+                    Firebase Cloud Function an die <strong>Google Gemini API</strong> (Gemini Flash Vision)
+                    gesendet.
+                </p>
+                <p>
+                    <strong>Verarbeitete Daten:</strong> Das komprimierte Kamerabild wird zur
+                    Rezepterkennung an Google-Server übermittelt. Es werden keine weiteren
+                    personenbezogenen Daten (Name, E-Mail etc.) an Gemini übermittelt.
+                </p>
+                <p>
+                    <strong>Zweck:</strong> Automatische Erkennung und Strukturierung von
+                    Rezeptinformationen (Name, Zutaten, Zubereitung, Kategorie) aus Fotos.
+                </p>
+                <p>
+                    <strong>Speicherung:</strong> Die übermittelten Bilder werden von Google
+                    nicht dauerhaft gespeichert und nicht zum Training von KI-Modellen verwendet.
+                    Die Verarbeitung erfolgt ausschließlich zur Echtzeit-Analyse im Rahmen der
+                    API-Anfrage.
+                </p>
+                <p>
+                    <strong>Rechtsgrundlage:</strong> Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO
+                    (Einwilligung) – Die Funktion wird nur auf ausdrückliche Aktion des Nutzers
+                    ausgelöst (Antippen des KI-Scan-Buttons). Der Nutzer wird vor der ersten
+                    Nutzung auf die Datenübermittlung hingewiesen.
                 </p>
             </div>
         </div>
@@ -139,9 +171,26 @@
             <div class="legal-section">
                 <h4>Apple iCloud/CloudKit</h4>
                 <p>
-                    Bei aktivierter iCloud-Synchronisierung werden Ihre Daten auf Apple-Servern 
-                    gespeichert. Es gelten die 
+                    Bei aktivierter iCloud-Synchronisierung werden Ihre Daten auf Apple-Servern
+                    gespeichert. Es gelten die
                     <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Datenschutzrichtlinien von Apple</a>.
+                </p>
+            </div>
+
+            <div class="legal-section">
+                <h4>Google Firebase &amp; Google Gemini API</h4>
+                <p>
+                    Bei aktivierter plattformübergreifender Synchronisierung werden Daten über
+                    Google Firebase (Cloud Firestore) gespeichert. Die KI-Scan-Funktion nutzt
+                    die Google Gemini API zur Bildanalyse. In beiden Fällen werden Daten an
+                    Server von <strong>Google Ireland Limited</strong> (Gordon House, Barrow Street,
+                    Dublin 4, Irland) übermittelt.
+                </p>
+                <p>
+                    Es gelten die
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzrichtlinien von Google</a>
+                    sowie die
+                    <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Nutzungsbedingungen der Gemini API</a>.
                 </p>
             </div>
         </div>
@@ -155,7 +204,7 @@
                 </p>
             </div>
             
-            <p class="last-updated">Stand: 02.02.2026</p>
+            <p class="last-updated">Stand: 06.03.2026</p>
         </div>
     </main>
 

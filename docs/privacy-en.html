@@ -1,341 +1,276 @@
-/* Küchenschatz Website - Stylesheet */
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacybeleid – RecipeStash</title>
+    <meta name="description" content="Privacybeleid voor de RecipeStash App. Informatie over gegevensverwerking.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <header style="position: relative; padding: 1.5rem 1rem;">
+        <div class="lang-switch">
+            <a href="datenschutz.html">DE</a>
+            <a href="privacy-en.html">EN</a>
+            <a href="privacy-nl.html" class="active">NL</a>
+        </div>
+        <h1>🔒 Privacybeleid</h1>
+        <p class="subtitle">Gegevensbescherming</p>
+    </header>
 
-:root {
-    --primary: #2E7D9B;
-    --primary-dark: #1D5A6F;
-    --primary-light: #4DA3C2;
-    --accent: #FF9500;
-    --background: #F5F7FA;
-    --card-bg: #FFFFFF;
-    --text-primary: #1A1A2E;
-    --text-secondary: #4A4A68;
-    --text-muted: #8A8AA3;
-    --border: #E5E7EB;
-    --shadow: rgba(0, 0, 0, 0.08);
-}
+    <nav>
+        <ul>
+            <li><a href="index-nl.html">Home</a></li>
+            <li><a href="impressum-nl.html">Colofon</a></li>
+            <li><a href="privacy-nl.html" class="active">Privacy</a></li>
+            <li><a href="support-nl.html">Ondersteuning</a></li>
+        </ul>
+    </nav>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <main>
+        <div class="card">
+            <h2>Verwerkingsverantwoordelijke</h2>
+            <div class="legal-section">
+                <p>
+                    <strong>Joachim Christof Huben</strong><br>
+                    c/o flexdienst – #11403<br>
+                    Kurt-Schumacher-Straße 76<br>
+                    67663 Kaiserslautern<br>
+                    Duitsland
+                </p>
+                <p>
+                    <strong>E-mail:</strong> <a href="mailto:mail@jch-technologies.de">mail@jch-technologies.de</a><br>
+                    <strong>Telefoon:</strong> +49 15679 698581
+                </p>
+            </div>
+        </div>
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: var(--background);
-    color: var(--text-primary);
-    line-height: 1.6;
-    min-height: 100vh;
-}
+        <div class="card">
+            <h2>Verwerkte gegevens &amp; doeleinden</h2>
 
-/* Header */
-header {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-}
+            <div class="legal-section">
+                <h4>App-gegevens</h4>
+                <p>
+                    Recepten, maaltijdplannen, boodschappenlijsten en andere app-inhoud worden lokaal op uw
+                    apparaat opgeslagen via SwiftData. Optioneel kunnen deze gegevens via iCloud/CloudKit
+                    worden gesynchroniseerd om ze op al uw Apple-apparaten beschikbaar te maken.
+                </p>
+            </div>
 
-header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
+            <div class="legal-section">
+                <h4>Groepen delen</h4>
+                <p>
+                    Bij het gebruik van de groepsfunctie worden recepten, maaltijdplannen en chatberichten
+                    gedeeld met groepsleden via Apple CloudKit. De gegevens worden opgeslagen op servers van
+                    Apple en zijn alleen toegankelijk voor uitgenodigde groepsleden.
+                </p>
+            </div>
 
-header .subtitle {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
+            <div class="legal-section">
+                <h4>Foto's/Camera</h4>
+                <p>
+                    De app kan toegang krijgen tot uw fotobibliotheek en camera om receptafbeeldingen toe te voegen.
+                    Deze toegang vindt alleen plaats na uw uitdrukkelijke toestemming en uitsluitend voor het
+                    beschreven doel.
+                </p>
+            </div>
 
-header .app-icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 22px;
-    margin-bottom: 1rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
+            <div class="legal-section">
+                <h4>Meldingen</h4>
+                <p>
+                    De app kan lokale meldingen versturen (bijv. voor kooktimers of nieuwe groepsactiviteiten).
+                    Deze worden uitsluitend lokaal op uw apparaat verwerkt;
+                    er vindt geen overdracht aan derden plaats.
+                </p>
+            </div>
 
-/* Navigation */
-nav {
-    background: var(--card-bg);
-    border-bottom: 1px solid var(--border);
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px var(--shadow);
-}
+            <div class="legal-section">
+                <h4>Receptimport</h4>
+                <p>
+                    Bij het importeren van recepten van websites (bijv. Instagram, TikTok) worden de
+                    betreffende URL's benaderd om receptgegevens te extraheren. Deze gegevens worden
+                    uitsluitend lokaal verwerkt en opgeslagen.
+                </p>
+            </div>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
+            <div class="legal-section">
+                <h4>Apple Gezondheid (HealthKit) / Google Health Connect</h4>
+                <p>
+                    De app kan optioneel geschatte voedingswaarden (calorieën, eiwitten,
+                    koolhydraten, vetten, vezels) uit het maaltijdplan naar Apple Gezondheid (iOS) of
+                    Google Health Connect (Android) schrijven. Deze functie dient als hulpmiddel om uw
+                    dagelijkse voedingsoverzicht centraal te bekijken.
+                </p>
+                <p>
+                    <strong>Verwerkte gegevens:</strong> Alleen geschatte voedingswaarden per dag worden
+                    doorgegeven aan het betreffende gezondheidsplatform. Geen receptinhoud, namen of andere
+                    persoonlijke gegevens worden verzonden.
+                </p>
+                <p>
+                    <strong>Opt-in:</strong> De functie is standaard uitgeschakeld en moet handmatig worden
+                    ingeschakeld in de app-instellingen. Daarnaast vraagt het besturingssysteem bij eerste
+                    toegang om een systeemtoestemming.
+                </p>
+                <p>
+                    <strong>Rechtsgrondslag:</strong> Art.&nbsp;6(1)(a) AVG (toestemming) – De gebruiker
+                    schakelt de functie bewust in en bevestigt de systeemtoestemming.
+                </p>
+                <p>
+                    <strong>Opmerking:</strong> De overgedragen voedingswaarden zijn gebaseerd op AI-schattingen
+                    en zijn vrijblijvende benaderingen, uitsluitend bedoeld als algemene richtlijn.
+                    De exploitant aanvaardt geen verantwoordelijkheid voor de juistheid ervan.
+                </p>
+            </div>
 
-nav a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    transition: all 0.2s;
-}
+            <div class="legal-section">
+                <h4>AI-gebaseerde voedingswaardeschatting (premiumfunctie)</h4>
+                <p>
+                    De app biedt een optionele functie om voedingswaarden voor recepten door AI te laten
+                    schatten. Bij het gebruik van deze functie worden alleen <strong>receptgegevens</strong>
+                    (receptnaam, ingrediëntenlijst met hoeveelheden, aantal porties en taalinstelling)
+                    via een Firebase Cloud Function naar de <strong>Google Gemini API</strong> verzonden.
+                </p>
+                <p>
+                    <strong>Verwerkte gegevens:</strong> Alleen receptgerelateerde gegevens worden verzonden.
+                    <strong>Geen persoonlijke gegevens</strong> (naam, e-mail, locatie, apparaat-ID, enz.)
+                    worden naar de AI gestuurd.
+                </p>
+                <p>
+                    <strong>Doel:</strong> Schatting van voedingswaarden (calorieën, eiwitten,
+                    koolhydraten, vetten, vezels) per 100&nbsp;g van het bereide gerecht.
+                </p>
+                <p>
+                    <strong>Opslag:</strong> De verzonden receptgegevens worden niet permanent door Google
+                    opgeslagen en worden niet gebruikt om AI-modellen te trainen.
+                </p>
+                <p>
+                    <strong>Rechtsgrondslag:</strong> Art.&nbsp;6(1)(a) AVG (toestemming) – De functie
+                    wordt alleen geactiveerd door een expliciete gebruikersactie (tikken op de knop
+                    "Voedingswaarden schatten met AI").
+                </p>
+            </div>
 
-nav a:hover,
-nav a.active {
-    color: var(--primary);
-    background: rgba(46, 125, 155, 0.1);
-}
+            <div class="legal-section">
+                <h4>AI-gebaseerde receptherkenning (premiumfunctie)</h4>
+                <p>
+                    De app biedt een optionele AI Scan-functie die recepten van foto's herkent.
+                    Bij het gebruik van deze functie wordt de gemaakte foto gecomprimeerd (max 1024&nbsp;px, JPEG)
+                    en als Base64-gecodeerde gegevens via een Firebase Cloud Function naar de
+                    <strong>Google Gemini API</strong> (Gemini Flash Vision) verzonden.
+                </p>
+                <p>
+                    <strong>Verwerkte gegevens:</strong> De gecomprimeerde camerafoto wordt naar servers van
+                    Google verzonden voor receptherkenning. Geen andere persoonlijke gegevens (naam, e-mail, enz.)
+                    worden naar Gemini gestuurd.
+                </p>
+                <p>
+                    <strong>Doel:</strong> Automatische herkenning en structurering van receptinformatie
+                    (naam, ingrediënten, instructies, categorie) uit foto's.
+                </p>
+                <p>
+                    <strong>Opslag:</strong> De verzonden afbeeldingen worden niet permanent door Google
+                    opgeslagen en worden niet gebruikt om AI-modellen te trainen. Verwerking vindt
+                    uitsluitend plaats voor real-time analyse als onderdeel van het API-verzoek.
+                </p>
+                <p>
+                    <strong>Rechtsgrondslag:</strong> Art.&nbsp;6(1)(a) AVG (toestemming) – De functie
+                    wordt alleen geactiveerd door een expliciete gebruikersactie (tikken op de AI Scan-knop).
+                    Gebruikers worden vóór het eerste gebruik geïnformeerd over de gegevensoverdracht.
+                </p>
+            </div>
+        </div>
 
-/* Main Content */
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
+        <div class="card">
+            <h2>Rechtsgrondslag</h2>
+            <div class="legal-section">
+                <p>
+                    De verwerking van uw gegevens is gebaseerd op de volgende rechtsgronden:
+                </p>
+                <ul>
+                    <li><strong>Art. 6(1)(b) AVG</strong> – Uitvoering van een overeenkomst (gebruik van de app)</li>
+                    <li><strong>Art. 6(1)(a) AVG</strong> – Toestemming (bijv. toegang tot camera/fotobibliotheek)</li>
+                </ul>
+            </div>
+        </div>
 
-/* Cards */
-.card {
-    background: var(--card-bg);
-    border-radius: 16px;
-    padding: 2rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 12px var(--shadow);
-}
+        <div class="card">
+            <h2>Bewaartermijn</h2>
+            <div class="legal-section">
+                <p>
+                    Uw gegevens blijven op uw apparaat opgeslagen totdat u ze handmatig verwijdert of de
+                    app verwijdert. Wanneer iCloud-synchronisatie is ingeschakeld, wordt de bewaartermijn
+                    bepaald door uw persoonlijke iCloud-instellingen.
+                </p>
+            </div>
+        </div>
 
-.card h2 {
-    color: var(--primary);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--border);
-}
+        <div class="card">
+            <h2>Uw rechten</h2>
+            <div class="legal-section">
+                <p>Op grond van de AVG heeft u de volgende rechten:</p>
+                <ul>
+                    <li><strong>Recht op inzage (Art. 15):</strong> U kunt informatie opvragen over uw verwerkte gegevens.</li>
+                    <li><strong>Recht op rectificatie (Art. 16):</strong> U kunt correctie van onjuiste gegevens verzoeken.</li>
+                    <li><strong>Recht op wissing (Art. 17):</strong> U kunt verwijdering van uw gegevens verzoeken.</li>
+                    <li><strong>Recht op beperking (Art. 18):</strong> U kunt beperking van de verwerking verzoeken.</li>
+                    <li><strong>Recht op overdraagbaarheid (Art. 20):</strong> U kunt uw gegevens in een overdraagbaar formaat ontvangen.</li>
+                    <li><strong>Recht van bezwaar (Art. 21):</strong> U kunt bezwaar maken tegen de verwerking.</li>
+                    <li><strong>Recht om een klacht in te dienen:</strong> U kunt een klacht indienen bij een toezichthoudende autoriteit.</li>
+                </ul>
+            </div>
+        </div>
 
-.card h3 {
-    color: var(--text-primary);
-    font-size: 1.1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-}
+        <div class="card">
+            <h2>Derden</h2>
+            <div class="legal-section">
+                <h4>Apple iCloud/CloudKit</h4>
+                <p>
+                    Wanneer iCloud-synchronisatie is ingeschakeld, worden uw gegevens opgeslagen op servers van Apple.
+                    Het <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">privacybeleid van Apple</a> is van toepassing.
+                </p>
+            </div>
 
-.card p {
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-}
+            <div class="legal-section">
+                <h4>Google Firebase &amp; Google Gemini API</h4>
+                <p>
+                    Wanneer cross-platform synchronisatie is ingeschakeld, worden gegevens opgeslagen via Google
+                    Firebase (Cloud Firestore). De AI Scan-functie maakt gebruik van de Google Gemini API
+                    voor beeldanalyse. In beide gevallen worden gegevens verzonden naar servers beheerd door
+                    <strong>Google Ireland Limited</strong> (Gordon House, Barrow Street,
+                    Dublin 4, Ierland).
+                </p>
+                <p>
+                    Het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid van Google</a>
+                    en de
+                    <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">servicevoorwaarden van de Gemini API</a>
+                    zijn van toepassing.
+                </p>
+            </div>
+        </div>
 
-.card ul {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-secondary);
-}
+        <div class="card">
+            <h2>Slotbepalingen</h2>
+            <div class="legal-section">
+                <p>
+                    Het Duitse recht is van toepassing. Dwingende consumentenbeschermingsregelingen blijven
+                    onverlet. De bevoegde rechtbank – voor zover toegestaan – is de vestigingsplaats van de aanbieder.
+                </p>
+            </div>
 
-.card li {
-    margin-bottom: 0.5rem;
-}
+            <p class="last-updated">Laatst bijgewerkt: 9 maart 2026</p>
+        </div>
+    </main>
 
-/* Features Grid */
-.features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.feature-card {
-    background: var(--card-bg);
-    border-radius: 16px;
-    padding: 1.5rem;
-    text-align: center;
-    box-shadow: 0 4px 12px var(--shadow);
-    transition: transform 0.2s;
-}
-
-.feature-card:hover {
-    transform: translateY(-4px);
-}
-
-.feature-card .icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.feature-card h3 {
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-}
-
-.feature-card p {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-/* Buttons */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 12px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s;
-}
-
-.btn-primary {
-    background: var(--primary);
-    color: white;
-}
-
-.btn-primary:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
-}
-
-.btn-secondary {
-    background: var(--border);
-    color: var(--text-primary);
-}
-
-.btn-secondary:hover {
-    background: var(--text-muted);
-    color: white;
-}
-
-/* App Store Badge */
-.app-store-badge {
-    height: 50px;
-    margin-top: 1rem;
-}
-
-/* Footer */
-footer {
-    background: var(--text-primary);
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-footer a {
-    color: var(--primary-light);
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer .links {
-    margin-bottom: 1rem;
-}
-
-footer .links a {
-    margin: 0 1rem;
-}
-
-footer .copyright {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-/* Language Switcher */
-.lang-switch {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-.lang-switch a {
-    color: white;
-    opacity: 0.8;
-    text-decoration: none;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-}
-
-.lang-switch a:hover,
-.lang-switch a.active {
-    opacity: 1;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-    
-    nav ul {
-        gap: 1rem;
-    }
-    
-    .card {
-        padding: 1.5rem;
-    }
-    
-    .features {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Contact Info */
-.contact-info {
-    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
-    color: white;
-    border-radius: 16px;
-    padding: 2rem;
-    margin-top: 2rem;
-}
-
-.contact-info h3 {
-    color: white;
-    margin-bottom: 1rem;
-}
-
-.contact-info p {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.contact-info a {
-    color: white;
-    font-weight: 600;
-}
-
-/* Legal Text */
-.legal-section {
-    margin-bottom: 1.5rem;
-}
-
-.legal-section h4 {
-    color: var(--text-primary);
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.legal-section p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-}
-
-/* Links in Cards */
-.card a,
-.legal-section a {
-    color: var(--primary);
-    text-decoration: underline;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-.card a:hover,
-.legal-section a:hover {
-    color: var(--primary-dark);
-}
-
-.last-updated {
-    color: var(--text-muted);
-    font-size: 0.85rem;
-    font-style: italic;
-    margin-top: 2rem;
-}
+    <footer>
+        <div class="links">
+            <a href="impressum-nl.html">Colofon</a>
+            <a href="privacy-nl.html">Privacy</a>
+            <a href="support-nl.html">Ondersteuning</a>
+        </div>
+        <p class="copyright">
+            © 2024-2026 Joachim Christof Huben. Alle rechten voorbehouden.
+        </p>
+    </footer>
+</body>
+</html>

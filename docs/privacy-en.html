@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy – Küchenschatz</title>
-    <meta name="description" content="Privacy Policy for the Küchenschatz App. Information about data processing.">
+    <title>Privacy Policy – RecipeStash</title>
+    <meta name="description" content="Privacy Policy for the RecipeStash App. Information about data processing.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="icon.png">
 </head>
@@ -13,6 +13,7 @@
         <div class="lang-switch">
             <a href="datenschutz.html">DE</a>
             <a href="privacy-en.html" class="active">EN</a>
+            <a href="privacy-nl.html">NL</a>
         </div>
         <h1>🔒 Privacy Policy</h1>
         <p class="subtitle">Data Protection</p>
@@ -90,6 +91,64 @@
                     When importing recipes from websites (e.g., Instagram, TikTok), the corresponding
                     URLs are accessed to extract recipe data. This data is processed and stored
                     exclusively locally.
+                </p>
+            </div>
+
+            <div class="legal-section">
+                <h4>Apple Health (HealthKit) / Google Health Connect</h4>
+                <p>
+                    The app can optionally write estimated nutrition values (calories, protein,
+                    carbohydrates, fat, fiber) from the meal plan to Apple Health (iOS) or
+                    Google Health Connect (Android). This feature serves as a tool to centrally
+                    view your daily nutrient overview.
+                </p>
+                <p>
+                    <strong>Data processed:</strong> Only estimated nutrition values per day are
+                    passed to the respective health platform. No recipe content, names, or other
+                    personal data is transmitted.
+                </p>
+                <p>
+                    <strong>Opt-in:</strong> The feature is disabled by default and must be manually
+                    enabled in the app settings. Additionally, the operating system requests a
+                    system permission on first access.
+                </p>
+                <p>
+                    <strong>Legal basis:</strong> Art.&nbsp;6(1)(a) GDPR (consent) – The user
+                    consciously enables the feature and confirms the system permission.
+                </p>
+                <p>
+                    <strong>Note:</strong> The nutritional values transferred are based on AI
+                    estimates and are non-binding approximations for general guidance only.
+                    The operator assumes no responsibility for their accuracy.
+                </p>
+            </div>
+
+            <div class="legal-section">
+                <h4>AI-Based Nutrition Estimation (Premium Feature)</h4>
+                <p>
+                    The app offers an optional feature to have nutritional values for recipes
+                    estimated by AI. When using this feature, only <strong>recipe data</strong>
+                    (recipe name, ingredient list with quantities, number of servings, and language
+                    setting) is transmitted via a Firebase Cloud Function to the
+                    <strong>Google Gemini API</strong>.
+                </p>
+                <p>
+                    <strong>Data processed:</strong> Only recipe-related data is transmitted.
+                    <strong>No personal data</strong> (name, email, location, device ID, etc.)
+                    is sent to the AI.
+                </p>
+                <p>
+                    <strong>Purpose:</strong> Estimation of nutritional values (calories, protein,
+                    carbohydrates, fat, fiber) per 100&nbsp;g of the finished dish.
+                </p>
+                <p>
+                    <strong>Storage:</strong> The transmitted recipe data is not permanently stored
+                    by Google and is not used to train AI models.
+                </p>
+                <p>
+                    <strong>Legal basis:</strong> Art.&nbsp;6(1)(a) GDPR (consent) – The feature
+                    is only triggered by an explicit user action (tapping the "Estimate nutrition
+                    with AI" button).
                 </p>
             </div>
 
@@ -200,7 +259,7 @@
                 </p>
             </div>
             
-            <p class="last-updated">Last updated: March 6, 2026</p>
+            <p class="last-updated">Last updated: March 9, 2026</p>
         </div>
     </main>
 

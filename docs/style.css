@@ -183,7 +183,8 @@ main {
     transition: all 0.2s;
 }
 
-.btn-primary {
+.btn-primary,
+.card .btn-primary {
     background: var(--primary);
     color: white;
 }

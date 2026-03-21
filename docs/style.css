@@ -189,8 +189,10 @@ main {
     color: white;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.card .btn-primary:hover {
     background: var(--primary-dark);
+    color: white;
     transform: translateY(-2px);
 }
 
